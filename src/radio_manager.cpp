@@ -25,11 +25,15 @@ bool RadioManager::init() {
     return false;
   }
 
+  Serial.println("Módulo NRF24L01 #1 inicializado com sucesso");
+
   // Configurando o segundo módulo NRF24L01
   if (!radio2.begin(&spi2)) {
     Serial.println("Falha ao inicializar o módulo NRF24L01 #2");
     return false;
   }
+
+  Serial.println("Módulo NRF24L01 #2 inicializado com sucesso");
 
   // Configurações para máxima potência e interferência
   radio1.setPALevel(RF24_PA_MAX);  // Potência máxima
@@ -42,6 +46,8 @@ bool RadioManager::init() {
 
   // Gerando dados aleatórios para transmissão
   generateRandomData();
+
+  Serial.println("Radio Manager Inicializado");
 
   return true;
 }
