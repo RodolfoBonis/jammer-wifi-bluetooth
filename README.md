@@ -40,20 +40,20 @@ Este dispositivo foi desenvolvido apenas para fins educacionais e de testes em a
 | SCK           | GPIO 14    |                |             |
 | MOSI          | GPIO 13    |                |             |
 | MISO          | GPIO 12    |                |             |
-| VCC           | 3.3V       | +              |             |
-| GND           | GND        | -              |             |
+| VCC           | 3.3V       | (+) capacitor  |             |
+| GND           | GND        | (-) capacitor  |             |
 
 ### Módulo NRF24L01 #2
 
-| Pino NRF24L01 | Pino ESP32 | Capacitor 10μF  | Observações |
-|---------------|------------|-----------------|-------------|
-| CE            | GPIO 22    |                 |             |
-| CSN           | GPIO 21    |                 |             |
-| SCK           | GPIO 18    |                 |             |
-| MOSI          | GPIO 23    |                 |             |
-| MISO          | GPIO 19    |                 |             |
-| VCC           | 3.3V       | +               |             |
-| GND           | GND        | -               |             |
+| Pino NRF24L01 | Pino ESP32 | Capacitor 10μF | Observações |
+|---------------|------------|----------------|-------------|
+| CE            | GPIO 22    |                |             |
+| CSN           | GPIO 21    |                |             |
+| SCK           | GPIO 18    |                |             |
+| MOSI          | GPIO 23    |                |             |
+| MISO          | GPIO 19    |                |             |
+| VCC           | 3.3V       | (+) capacitor  |             |
+| GND           | GND        | (-) capacitor  |             |
 
 ### LED RGB
 
